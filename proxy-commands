@@ -1,2 +1,3 @@
 ansible -i ./inventory dev -m debug -a "msg={{host_var}}" --ask-vault-pass
 ansible -i ./inventory dev -m debug -a "msg={{host_var}}" --vault-password-file /opt/apps/secret/.vault
+ansible-playbook  -i inv.yml helo.yml  --vault-password-file /opt/apps/secret/.vault
