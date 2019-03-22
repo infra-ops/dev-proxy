@@ -1,8 +1,6 @@
 ---
 - hosts: dev
-  become: yes
-  become_method: sudo
-  become_user: deploy
+  
 
   tasks:
       - name: print hello
